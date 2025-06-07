@@ -33,6 +33,8 @@ require("lazy").setup({
 				require('nordic').load()
 			end
 		},
-		-- { import = "plugins" },
+		{ 
+			import = "config.plugins" 
+		},
 	},
 })
