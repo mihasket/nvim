@@ -15,6 +15,9 @@ return {
           hide_gitignored = true,
         },
       },
+      window = {
+        width = 30,
+      },
 
       vim.keymap.set('n', '<leader>tn', function()
         require('neo-tree.command').execute { toggle = true }
