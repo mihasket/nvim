@@ -2,11 +2,13 @@ return {
   {
     'saghen/blink.cmp',
     dependencies = { 'rafamadriz/friendly-snippets' },
-
     version = '1.*',
 
     opts = {
-      keymap = { preset = 'default' },
+      keymap = {
+        preset = 'default',
+        ['<Tab>'] = { 'select_and_accept' },
+      },
 
       appearance = {
         use_nvim_cmp_as_default = true,
