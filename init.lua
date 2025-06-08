@@ -43,7 +43,6 @@ require("config.lazy")
 
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", "<cmd>:.lua<CR>")
-vim.keymap.set("n", "<space>tn", "<cmd>:Explore<CR>")
 
 vim.keymap.set('n', 'grn', vim.lsp.buf.rename)
 vim.keymap.set('n', 'gra', vim.lsp.buf.code_action)
