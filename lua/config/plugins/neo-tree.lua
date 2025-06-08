@@ -16,7 +16,7 @@ return {
         },
       },
       window = {
-        width = 30,
+        width = 35,
       },
 
       vim.keymap.set('n', '<leader>tn', function()
