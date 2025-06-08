@@ -30,6 +30,8 @@ return {
           cwd = vim.fn.stdpath("config")
         }
       end)
+
+      require "config.telescope.multigrep".setup()
     end
   }
 }
