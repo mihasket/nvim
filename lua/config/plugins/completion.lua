@@ -7,7 +7,15 @@ return {
     opts = {
       keymap = {
         preset = 'default',
-        ['<Tab>'] = { 'select_and_accept' },
+        ['<Tab>'] = {
+          function(cmp)
+            if cmp.is_visible() then
+              return cmp.select_and_accept()
+            else
+              return vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<Tab>', true, false, true), 'n', false)
+            end
+          end
+        },
       },
 
       appearance = {
