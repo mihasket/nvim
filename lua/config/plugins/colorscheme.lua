@@ -1,10 +1,10 @@
 return {
   {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
     config = function()
-      require('nordic').load()
+      vim.cmd.colorscheme "catppuccin-mocha"
     end
   },
 }
