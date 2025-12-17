@@ -13,3 +13,13 @@ vim.filetype.add({
     tmpl = "html",
   },
 })
+
+vim.filetype.add({
+  extension = {
+    vue = function()
+      -- primary filetype
+      return "vue"
+    end,
+  },
+})
+
